@@ -30,10 +30,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -161.5
-offset_top = -49.5
-offset_right = 161.5
-offset_bottom = 49.5
+offset_left = -197.0
+offset_top = -57.0
+offset_right = 198.0
+offset_bottom = 114.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_5ctju")
@@ -54,6 +54,27 @@ theme_override_constants/outline_size = 15
 theme_override_font_sizes/font_size = 51
 text = "Top Text"
 autowrap_mode = 2
+
+[node name="logo" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 182.0
+theme_override_font_sizes/font_size = 111
+text = "PiDeck Customizer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="instruction" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 106.0
+offset_right = 1153.0
+offset_bottom = 288.0
+theme_override_font_sizes/font_size = 36
+text = "To Connect your PiDeck, Locate the storage device and open the
+settings.json file located inside."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="file_selected" from="files" to="." method="_on_files_file_selected"]
 [connection signal="button_up" from="open_file_select" to="." method="_on_open_file_select_button_up"]
