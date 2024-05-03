@@ -13,15 +13,13 @@ grow_vertical = 2
 [node name="scroll" type="ScrollContainer" parent="."]
 layout_direction = 1
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -407.0
-offset_top = -322.0
-offset_right = 742.0
-offset_bottom = 327.0
+anchors_preset = -1
+anchor_left = 0.168837
+anchor_top = 0.157407
+anchor_right = 0.831163
+anchor_bottom = 1.15895
+offset_top = 26.0
+offset_bottom = 26.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -39,3 +37,31 @@ layout_mode = 2
 [node name="lol2" parent="scroll/WORK" instance=ExtResource("1_3vsg2")]
 custom_minimum_size = Vector2(0, 250)
 layout_mode = 2
+
+[node name="bg" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -603.5
+offset_right = 603.5
+offset_bottom = 112.0
+grow_horizontal = 2
+
+[node name="info" type="Label" parent="bg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = -49.5
+offset_right = 162.5
+offset_bottom = 49.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 41
+text = "Button 1"
+horizontal_alignment = 1
+vertical_alignment = 1
