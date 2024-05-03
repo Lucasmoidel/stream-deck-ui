@@ -40,5 +40,20 @@ theme = ExtResource("2_5ctju")
 theme_override_font_sizes/font_size = 66
 text = "Select File"
 
+[node name="err" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.998
+anchor_bottom = 0.998
+offset_right = 0.303955
+offset_bottom = 0.295959
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 51
+text = "Top Text"
+autowrap_mode = 2
+
 [connection signal="file_selected" from="files" to="." method="_on_files_file_selected"]
 [connection signal="button_up" from="open_file_select" to="." method="_on_open_file_select_button_up"]

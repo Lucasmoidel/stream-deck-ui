@@ -22,7 +22,12 @@ func _on_files_file_selected(path):
 		data = json.data
 	else:
 		print("JSON Prase Error: ", json.get_error_message(), " in ", json_text)
-	print(data["0"])
+	if "version" in data:
+		$"/root/FileSave".piData = data
+	else:
+		$err.set_text("Wrong JSON file loaded! Make sure you are searching the correct directory!")
+		$err.visible = true
+		$open_file_select.visible = true
 
 
 func _on_open_file_select_button_up():
