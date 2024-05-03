@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="PiDeck UI"
+run/main_scene="res://connect_pideck.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+FileSave="*res://file_save.gd"
