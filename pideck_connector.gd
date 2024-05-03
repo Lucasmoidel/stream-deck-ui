@@ -1,6 +1,6 @@
 extends Control
 
-
+var data
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -10,11 +10,19 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func _on_files_file_selected(path):
 	$open_file_select.visible = false
+	var json = JSON.new()
 	var file = FileAccess.open(path, FileAccess.READ)
-	print(file["profile"])
+	var json_text = file.get_as_text()
+	file.close()
+	
+	var error = json.parse(json_text)
+	if error == OK:
+		data = json.data
+	else:
+		print("JSON Prase Error: ", json.get_error_message(), " in ", json_text)
+	print(data["0"])
 
 
 func _on_open_file_select_button_up():

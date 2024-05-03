@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cihr7j3m1f8wv"]
+[gd_scene load_steps=3 format=3 uid="uid://cihr7j3m1f8wv"]
 
 [ext_resource type="Script" path="res://pideck_connector.gd" id="1_kt3cy"]
+[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="2_5ctju"]
 
 [node name="ConnectPideck" type="Control"]
 layout_mode = 3
@@ -35,6 +36,7 @@ offset_right = 161.5
 offset_bottom = 49.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_5ctju")
 theme_override_font_sizes/font_size = 66
 text = "Select File"
 
