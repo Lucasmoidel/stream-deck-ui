@@ -1,7 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://lh331jkwlfji"]
+[gd_scene load_steps=5 format=3 uid="uid://lh331jkwlfji"]
 
 [ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="1_cs2sk"]
-[ext_resource type="StyleBox" uid="uid://cw7vcp773ei32" path="res://stuff idk.tres" id="2_ykw7p"]
+[ext_resource type="StyleBox" uid="uid://cw7vcp773ei32" path="res://hover.tres" id="2_ykw7p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgp0f"]
+bg_color = Color(0.787759, 0.787759, 0.787759, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.646029, 0.646029, 0.646029, 1)
+border_blend = true
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwcup"]
+bg_color = Color(0.787759, 0.787759, 0.787759, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.646029, 0.646029, 0.646029, 1)
+border_blend = true
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -20,74 +46,114 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -378.0
-offset_top = -274.0
+offset_top = -278.0
 offset_right = 378.0
-offset_bottom = 152.0
+offset_bottom = 148.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 100
 theme_override_constants/v_separation = 100
 columns = 4
 
-[node name="Button" type="Button" parent="GridContainer"]
+[node name="1" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "1"
 
-[node name="Button2" type="Button" parent="GridContainer"]
+[node name="2" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "2"
 
-[node name="Button3" type="Button" parent="GridContainer"]
+[node name="3" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "3"
 
-[node name="Button4" type="Button" parent="GridContainer"]
+[node name="4" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "4"
 
-[node name="Button5" type="Button" parent="GridContainer"]
+[node name="5" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "5"
 
-[node name="Button6" type="Button" parent="GridContainer"]
+[node name="6" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "6"
 
-[node name="Button7" type="Button" parent="GridContainer"]
+[node name="7" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "7"
 
-[node name="Button8" type="Button" parent="GridContainer"]
+[node name="8" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "8
 "
 
-[node name="OptionButton" type="OptionButton" parent="."]
+[node name="drop down" type="OptionButton" parent="."]
 layout_mode = 0
-offset_left = 348.0
-offset_top = 539.0
-offset_right = 822.0
-offset_bottom = 626.0
+offset_left = 436.0
+offset_top = 526.0
+offset_right = 713.0
+offset_bottom = 648.0
 theme = ExtResource("1_cs2sk")
-theme_override_styles/normal = ExtResource("2_ykw7p")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jgp0f")
 theme_override_styles/hover = ExtResource("2_ykw7p")
 item_count = 1
 selected = 0
 popup/item_0/text = "preset1"
 popup/item_0/id = 0
+
+[node name="save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 526.0
+offset_right = 909.0
+offset_bottom = 648.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
+theme_override_styles/hover = ExtResource("2_ykw7p")
+text = "save"
+
+[node name="new" type="Button" parent="."]
+offset_left = 960.0
+offset_top = 526.0
+offset_right = 1105.0
+offset_bottom = 648.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
+theme_override_styles/hover = ExtResource("2_ykw7p")
+text = "new
+"
+
+[node name="rename" type="Button" parent="."]
+offset_left = 193.0
+offset_top = 526.0
+offset_right = 385.0
+offset_bottom = 648.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
+theme_override_styles/hover = ExtResource("2_ykw7p")
+text = "rename"
+
+[node name="HFlowContainer" type="HFlowContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
