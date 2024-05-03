@@ -104,7 +104,6 @@ alignment = 1
 [node name="drop down" type="OptionButton" parent="options"]
 layout_mode = 2
 theme = ExtResource("1_cs2sk")
-selected = 0
 
 [node name="new" type="Button" parent="options"]
 layout_mode = 2
