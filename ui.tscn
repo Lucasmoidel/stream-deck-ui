@@ -1,33 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://lh331jkwlfji"]
+[gd_scene load_steps=2 format=3 uid="uid://lh331jkwlfji"]
 
 [ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="1_cs2sk"]
-[ext_resource type="StyleBox" uid="uid://cw7vcp773ei32" path="res://hover.tres" id="2_ykw7p"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgp0f"]
-bg_color = Color(0.787759, 0.787759, 0.787759, 1)
-border_width_left = 40
-border_width_top = 40
-border_width_right = 40
-border_width_bottom = 40
-border_color = Color(0.646029, 0.646029, 0.646029, 1)
-border_blend = true
-corner_radius_top_left = 45
-corner_radius_top_right = 45
-corner_radius_bottom_right = 45
-corner_radius_bottom_left = 45
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwcup"]
-bg_color = Color(0.787759, 0.787759, 0.787759, 1)
-border_width_left = 40
-border_width_top = 40
-border_width_right = 40
-border_width_bottom = 40
-border_color = Color(0.646029, 0.646029, 0.646029, 1)
-border_blend = true
-corner_radius_top_left = 45
-corner_radius_top_right = 45
-corner_radius_bottom_right = 45
-corner_radius_bottom_left = 45
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -104,56 +77,51 @@ theme_override_font_sizes/font_size = 60
 text = "8
 "
 
-[node name="drop down" type="OptionButton" parent="."]
-layout_mode = 0
-offset_left = 436.0
-offset_top = 526.0
-offset_right = 713.0
-offset_bottom = 648.0
+[node name="VFlowContainer" type="VFlowContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -348.0
+offset_top = -122.0
+offset_right = 348.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="drop down" type="OptionButton" parent="VFlowContainer"]
+layout_mode = 2
 theme = ExtResource("1_cs2sk")
-theme_override_styles/normal = SubResource("StyleBoxFlat_jgp0f")
-theme_override_styles/hover = ExtResource("2_ykw7p")
-item_count = 1
+item_count = 5
 selected = 0
 popup/item_0/text = "preset1"
 popup/item_0/id = 0
+popup/item_1/text = "preset1"
+popup/item_1/id = 1
+popup/item_2/text = "preset1"
+popup/item_2/id = 2
+popup/item_3/text = "preset1"
+popup/item_3/id = 3
+popup/item_4/text = "preset1"
+popup/item_4/id = 4
 
-[node name="save" type="Button" parent="."]
-layout_mode = 0
-offset_left = 764.0
-offset_top = 526.0
-offset_right = 909.0
-offset_bottom = 648.0
+[node name="save" type="Button" parent="VFlowContainer"]
+layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
-theme_override_styles/hover = ExtResource("2_ykw7p")
 text = "save"
 
-[node name="new" type="Button" parent="."]
-offset_left = 960.0
-offset_top = 526.0
-offset_right = 1105.0
-offset_bottom = 648.0
+[node name="new" type="Button" parent="VFlowContainer"]
+layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
-theme_override_styles/hover = ExtResource("2_ykw7p")
 text = "new
 "
 
-[node name="rename" type="Button" parent="."]
-offset_left = 193.0
-offset_top = 526.0
-offset_right = 385.0
-offset_bottom = 648.0
+[node name="rename" type="Button" parent="VFlowContainer"]
+layout_mode = 2
 theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_nwcup")
-theme_override_styles/hover = ExtResource("2_ykw7p")
 text = "rename"
-
-[node name="HFlowContainer" type="HFlowContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
