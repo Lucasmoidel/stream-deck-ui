@@ -10,6 +10,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="save" type="Button" parent="."]
+layout_mode = 2
+offset_right = 141.0
+offset_bottom = 123.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 30
+text = "save"
+
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_direction = 2
 layout_mode = 1
@@ -84,9 +92,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -348.0
-offset_top = -122.0
-offset_right = 348.0
+offset_left = -261.0
+offset_top = -123.0
+offset_right = 261.0
 grow_horizontal = 2
 grow_vertical = 0
 alignment = 1
@@ -106,12 +114,6 @@ popup/item_3/text = "preset1"
 popup/item_3/id = 3
 popup/item_4/text = "preset1"
 popup/item_4/id = 4
-
-[node name="save" type="Button" parent="VFlowContainer"]
-layout_mode = 2
-theme = ExtResource("1_cs2sk")
-theme_override_font_sizes/font_size = 30
-text = "save"
 
 [node name="new" type="Button" parent="VFlowContainer"]
 layout_mode = 2
