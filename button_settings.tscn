@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://l3b2v6t66ody"]
+
+[ext_resource type="PackedScene" uid="uid://car65fl71glxh" path="res://cmd_box.tscn" id="1_3vsg2"]
+
+[node name="ButtonSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="scroll" type="ScrollContainer" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -407.0
+offset_top = -322.0
+offset_right = 742.0
+offset_bottom = 327.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WORK" type="VBoxContainer" parent="scroll"]
+clip_contents = true
+custom_minimum_size = Vector2(750, 750)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+
+[node name="lol" parent="scroll/WORK" instance=ExtResource("1_3vsg2")]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+
+[node name="lol2" parent="scroll/WORK" instance=ExtResource("1_3vsg2")]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2

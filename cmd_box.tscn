@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://car65fl71glxh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3nh2b"]
+bg_color = Color(0.856067, 0.856067, 0.856067, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="Theme" id="Theme_7ubqk"]
+Label/colors/font_color = Color(0, 0, 0, 1)
+
+[node name="cmdBox" type="Panel"]
+offset_right = 711.0
+offset_bottom = 320.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3nh2b")
+
+[node name="text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 305.0
+offset_bottom = 63.0
+theme = SubResource("Theme_7ubqk")
+theme_override_font_sizes/font_size = 36
+text = "Command: Press"
