@@ -23,3 +23,12 @@ func _on_new_button_up():
 	print(max)
 	data["profiles"][str(max)] = {"name":("Profile "+str(max)),"1":{},"2":{},"3":{},"4":{},"5":{},"6":{},"7":{},"8":{}}
 	get_tree().reload_current_scene()
+
+
+func _on_profile_button_button_up(button_num):
+	tempSave.cur_button = button_num
+	get_tree().change_scene_to_file("res://button_settings.tscn")
+
+
+func _on_drop_down_item_selected(index):
+	tempSave.cur_profile = index+1

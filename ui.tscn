@@ -132,4 +132,6 @@ text = "Top Text"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="button_up" from="GridContainer/1" to="." method="_on_profile_button_button_up" binds= [0]]
+[connection signal="item_selected" from="options/drop down" to="." method="_on_drop_down_item_selected"]
 [connection signal="button_up" from="options/new" to="." method="_on_new_button_up"]

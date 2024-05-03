@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://l3b2v6t66ody"]
+[gd_scene load_steps=3 format=3 uid="uid://l3b2v6t66ody"]
 
 [ext_resource type="PackedScene" uid="uid://car65fl71glxh" path="res://cmd_box.tscn" id="1_3vsg2"]
+[ext_resource type="Script" path="res://handle_commands.gd" id="1_cxfsd"]
 
 [node name="ButtonSettings" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cxfsd")
 
 [node name="scroll" type="ScrollContainer" parent="."]
 layout_direction = 1
@@ -18,7 +20,9 @@ anchor_left = 0.168837
 anchor_top = 0.157407
 anchor_right = 0.831163
 anchor_bottom = 1.15895
+offset_left = 0.5
 offset_top = 26.0
+offset_right = 0.5
 offset_bottom = 26.0
 grow_horizontal = 2
 grow_vertical = 2
