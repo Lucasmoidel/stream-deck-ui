@@ -26,14 +26,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -378.0
-offset_top = -278.0
-offset_right = 378.0
-offset_bottom = 148.0
+offset_left = -384.0
+offset_top = -182.0
+offset_right = 384.0
+offset_bottom = 177.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 100
-theme_override_constants/v_separation = 100
+theme_override_constants/v_separation = 25
 columns = 4
 
 [node name="1" type="Button" parent="GridContainer"]
