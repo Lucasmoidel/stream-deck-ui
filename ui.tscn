@@ -76,3 +76,15 @@ theme = ExtResource("1_cs2sk")
 theme_override_font_sizes/font_size = 60
 text = "8
 "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 595.0
+offset_right = 972.0
+offset_bottom = 687.0
+theme = ExtResource("1_cs2sk")
+alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
