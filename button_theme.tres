@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bd1ksuf5j6cn8"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bd1ksuf5j6cn8"]
 
 [ext_resource type="StyleBox" uid="uid://cw7vcp773ei32" path="res://hover.tres" id="1_h3ni6"]
+[ext_resource type="FontFile" uid="uid://d2jepicw5hmg6" path="res://comic.ttf" id="1_ol40x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wr18o"]
 bg_color = Color(0.969137, 0.969137, 0.969137, 1)
@@ -57,12 +58,14 @@ corner_radius_bottom_left = 45
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/fonts/font = ExtResource("1_ol40x")
 Button/styles/hover = SubResource("StyleBoxFlat_wr18o")
 Button/styles/normal = SubResource("StyleBoxFlat_44idk")
 OptionButton/colors/font_color = Color(0, 0, 0, 1)
 OptionButton/colors/font_pressed_color = Color(0, 0, 0, 1)
 OptionButton/constants/modulate_arrow = 2
 OptionButton/font_sizes/font_size = 30
+OptionButton/fonts/font = ExtResource("1_ol40x")
 OptionButton/styles/hover = ExtResource("1_h3ni6")
 OptionButton/styles/normal = SubResource("StyleBoxFlat_3y3hj")
 OptionButton/styles/pressed = SubResource("StyleBoxFlat_qpypr")
