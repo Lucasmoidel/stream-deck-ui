@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://lh331jkwlfji"]
 
-[ext_resource type="Theme" path="res://button<'.tres" id="1_h5lg0"]
+[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="1_cs2sk"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,6 +12,74 @@ grow_vertical = 2
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_right = 149.0
-offset_bottom = 149.0
-theme = ExtResource("1_h5lg0")
+offset_left = 42.0
+offset_top = 114.0
+offset_right = 191.0
+offset_bottom = 263.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 111.0
+offset_right = 538.0
+offset_bottom = 260.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "2"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 602.0
+offset_top = 106.0
+offset_right = 751.0
+offset_bottom = 255.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "3"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 103.0
+offset_right = 1098.0
+offset_bottom = 252.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "4"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 42.0
+offset_top = 391.0
+offset_right = 191.0
+offset_bottom = 540.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "5"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 388.0
+offset_right = 538.0
+offset_bottom = 537.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "6"
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 602.0
+offset_top = 383.0
+offset_right = 751.0
+offset_bottom = 532.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "7"
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 949.0
+offset_top = 380.0
+offset_right = 1098.0
+offset_bottom = 529.0
+theme = ExtResource("1_cs2sk")
+theme_override_font_sizes/font_size = 60
+text = "8
+"
