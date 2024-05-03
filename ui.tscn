@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://lh331jkwlfji"]
+[gd_scene load_steps=3 format=3 uid="uid://lh331jkwlfji"]
 
 [ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="1_cs2sk"]
+[ext_resource type="StyleBox" uid="uid://cw7vcp773ei32" path="res://stuff idk.tres" id="2_ykw7p"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -84,6 +85,8 @@ offset_top = 539.0
 offset_right = 822.0
 offset_bottom = 626.0
 theme = ExtResource("1_cs2sk")
+theme_override_styles/normal = ExtResource("2_ykw7p")
+theme_override_styles/hover = ExtResource("2_ykw7p")
 item_count = 1
 selected = 0
 popup/item_0/text = "preset1"
