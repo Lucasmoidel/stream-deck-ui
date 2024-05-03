@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://cihr7j3m1f8wv"]
+
+[ext_resource type="Script" path="res://pideck_connector.gd" id="1_kt3cy"]
+
+[node name="ConnectPideck" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kt3cy")
+
+[node name="files" type="FileDialog" parent="."]
+title = "Find the settings.json file"
+initial_position = 2
+size = Vector2i(557, 299)
+unresizable = true
+content_scale_size = Vector2i(14605, 295)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("settings.json")
+
+[node name="open_file_select" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.5
+offset_top = -49.5
+offset_right = 161.5
+offset_bottom = 49.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 66
+text = "Select File"
+
+[connection signal="file_selected" from="files" to="." method="_on_files_file_selected"]
+[connection signal="button_up" from="open_file_select" to="." method="_on_open_file_select_button_up"]
