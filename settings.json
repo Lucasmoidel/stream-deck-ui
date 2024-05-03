@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "sku": "PiDeck1-8",
+  "profile": "0",
+  "profiles": {
+	"0": {
+	  "name": "Profile 1",
+	  "1": [
+		{
+		  "type": "press",
+		  "keys": [
+			"Keycode.ALT",
+			"Keycode.TAB"
+		  ],
+		  "mode": "quick"
+		},
+		{
+		  "type": "press",
+		  "keys": [
+			"Keycode.WINDOWS",
+			"Keycode.R"
+		  ],
+		  "mode": "quick"
+		},
+		{
+		  "type": "wait",
+		  "delay": 0.2
+		},
+		{
+		  "type": "type",
+		  "text": "cmd",
+		  "mode": "enter",
+		  "time": 0.1,
+		  "delay": 1
+		},
+		{
+		  "type": "type",
+		  "text": "dir",
+		  "mode": "enter",
+		  "time": 0.5,
+		  "delay": 0
+		}
+	  ]
+	}
+  }
+}
