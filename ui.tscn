@@ -18,10 +18,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -218.0
-offset_top = -133.0
-offset_right = 218.0
-offset_bottom = 133.0
+offset_left = -378.0
+offset_top = -274.0
+offset_right = 378.0
+offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 100
@@ -77,14 +77,13 @@ theme_override_font_sizes/font_size = 60
 text = "8
 "
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="OptionButton" type="OptionButton" parent="."]
 layout_mode = 0
-offset_left = 335.0
-offset_top = 595.0
-offset_right = 972.0
-offset_bottom = 687.0
-theme = ExtResource("1_cs2sk")
-alignment = 1
-
-[node name="OptionButton" type="OptionButton" parent="VBoxContainer"]
-layout_mode = 2
+offset_left = 348.0
+offset_top = 539.0
+offset_right = 822.0
+offset_bottom = 626.0
+item_count = 1
+selected = 0
+popup/item_0/text = "preset1"
+popup/item_0/id = 0
