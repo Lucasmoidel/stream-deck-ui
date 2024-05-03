@@ -4,7 +4,7 @@
   "profile": "0",
   "profiles": {
 	"0": {
-	  "name": "Profile 1",
+	  "name": "Hello World",
 	  "1": [
 		{
 		  "type": "press",

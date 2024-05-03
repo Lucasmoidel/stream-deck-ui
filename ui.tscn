@@ -132,3 +132,5 @@ theme_override_font_sizes/font_size = 56
 text = "Top Text"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="button_up" from="options/new" to="." method="_on_new_button_up"]
