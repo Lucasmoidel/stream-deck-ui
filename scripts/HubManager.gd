@@ -29,6 +29,10 @@ func _on_profile_button_button_up(button_num):
 	tempSave.cur_button = button_num
 	get_tree().change_scene_to_file("uid://l3b2v6t66ody")
 
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		var hex_rep = OS.get_keycode_string(event.keycode)
+		var keycode = "Keycode."+hex_rep.to_upper()
 
 func _on_drop_down_item_selected(index):
 	tempSave.cur_profile = index+1
