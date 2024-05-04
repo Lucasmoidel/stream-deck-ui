@@ -24,7 +24,7 @@ func _on_files_file_selected(path):
 		print("JSON Prase Error: ", json.get_error_message(), " in ", json_text)
 	if "version" in data:
 		$"/root/FileSave".piData = data
-		get_tree().change_scene_to_file("res://ui.tscn")
+		get_tree().change_scene_to_file("uid://lh331jkwlfji")
 	else:
 		$err.set_text("Wrong JSON file loaded! Make sure you are searching the correct directory!")
 		$err.visible = true

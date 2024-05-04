@@ -27,7 +27,7 @@ func _on_new_button_up():
 
 func _on_profile_button_button_up(button_num):
 	tempSave.cur_button = button_num
-	get_tree().change_scene_to_file("res://button_settings.tscn")
+	get_tree().change_scene_to_file("uid://l3b2v6t66ody")
 
 
 func _on_drop_down_item_selected(index):
