@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cihr7j3m1f8wv"]
 
-[ext_resource type="Script" path="res://pideck_connector.gd" id="1_kt3cy"]
-[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="2_5ctju"]
-[ext_resource type="FontFile" uid="uid://d2jepicw5hmg6" path="res://comic.ttf" id="3_li0pm"]
+[ext_resource type="Script" path="res://scripts/pideck_connector.gd" id="1_i0av7"]
+[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://resources/button_theme.tres" id="2_koevt"]
+[ext_resource type="FontFile" uid="uid://d2jepicw5hmg6" path="res://resources/comic.ttf" id="3_jhmfs"]
 
 [node name="ConnectPideck" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kt3cy")
+script = ExtResource("1_i0av7")
 
 [node name="files" type="FileDialog" parent="."]
 title = "Open a File"
@@ -37,7 +37,7 @@ offset_right = 198.0
 offset_bottom = 114.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_5ctju")
+theme = ExtResource("2_koevt")
 theme_override_font_sizes/font_size = 66
 text = "Select File"
 
@@ -52,7 +52,7 @@ offset_bottom = 0.295959
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("3_li0pm")
+theme_override_fonts/font = ExtResource("3_jhmfs")
 theme_override_font_sizes/font_size = 51
 text = "Top Text"
 autowrap_mode = 2
@@ -61,7 +61,7 @@ autowrap_mode = 2
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 182.0
-theme_override_fonts/font = ExtResource("3_li0pm")
+theme_override_fonts/font = ExtResource("3_jhmfs")
 theme_override_font_sizes/font_size = 111
 text = "PiDeck Customizer"
 horizontal_alignment = 1
@@ -73,7 +73,7 @@ offset_left = 1.0
 offset_top = 106.0
 offset_right = 1153.0
 offset_bottom = 288.0
-theme_override_fonts/font = ExtResource("3_li0pm")
+theme_override_fonts/font = ExtResource("3_jhmfs")
 theme_override_font_sizes/font_size = 36
 text = "To Connect your PiDeck, Locate the storage device and open the
 settings.json file located inside."

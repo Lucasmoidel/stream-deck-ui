@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://lh331jkwlfji"]
 
-[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://button_theme.tres" id="1_cs2sk"]
-[ext_resource type="Script" path="res://HubManager.gd" id="1_q4532"]
+[ext_resource type="Script" path="res://scripts/HubManager.gd" id="1_ltuv0"]
+[ext_resource type="Theme" uid="uid://bd1ksuf5j6cn8" path="res://resources/button_theme.tres" id="2_2fkt3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,13 +10,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q4532")
+script = ExtResource("1_ltuv0")
 
 [node name="save" type="Button" parent="."]
 layout_mode = 2
 offset_right = 141.0
 offset_bottom = 123.0
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 30
 text = "save"
 
@@ -40,49 +40,49 @@ columns = 4
 
 [node name="1" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "1"
 
 [node name="2" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "2"
 
 [node name="3" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "3"
 
 [node name="4" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "4"
 
 [node name="5" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "5"
 
 [node name="6" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "6"
 
 [node name="7" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "7"
 
 [node name="8" type="Button" parent="GridContainer"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 60
 text = "8
 "
@@ -103,18 +103,18 @@ alignment = 1
 
 [node name="drop down" type="OptionButton" parent="options"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 
 [node name="new" type="Button" parent="options"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 30
 text = "new
 "
 
 [node name="rename" type="Button" parent="options"]
 layout_mode = 2
-theme = ExtResource("1_cs2sk")
+theme = ExtResource("2_2fkt3")
 theme_override_font_sizes/font_size = 30
 text = "rename"
 

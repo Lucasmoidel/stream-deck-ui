@@ -11,16 +11,16 @@ config_version=5
 [application]
 
 config/name="PiDeck UI"
-run/main_scene="res://connect_pideck.tscn"
+run/main_scene="res://scenes/connect_pideck.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="res://icon.svg"
+config/icon="res://resources/icon.svg"
 
 [autoload]
 
-FileSave="*res://file_save.gd"
+FileSave="*res://scripts/file_save.gd"
 
 [display]
 
